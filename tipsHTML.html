@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento hecho por miguel Sorondo</title>
+    <style>
+        .meter-label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        meter {
+            width: 300px;
+            height: 20px;
+        }
+
+        .search-wrapper {
+            padding-top: 30px;
+            text-align: center;
+            min-height: 200px;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 1.2em;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+
+        .wrapper {
+            text-align: center;
+            padding: 0 15px;
+            background-color: #173446;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4em;
+        }
+
+        a {
+            color: #999;
+            position: relative;
+        }
+
+        a:after {
+            background-color: #999;
+            bottom: 0;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transition: all .3s ease-in-out 0s;
+            visibility: hidden;
+            width: 100%;
+        }
+
+        a:hover:after {
+            transform: scaleX(1);
+            visibility: visible;
+        }
+
+        body {
+            padding: 50px 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type=range] {
+            background: red;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<details>
+    <summary>
+        Atributo "loading = 'Lazy'"
+    </summary>
+
+    <body>
+        <img src='diw.jpg' loading='lazy' alt='Alternative Text'> <br>
+
+
+</details>
+<details>
+    <summary>
+        Enlaces para correo y llamadas
+    </summary>
+    <a href="mailto:{email}?subject={subject}&body={content}">
+        Envianos un mail email ;) <br>
+    </a>
+
+    <a href="tel:{phone}">
+        llamanos ;) <br>
+    </a>
+    <a href="sms:{phone}?body={content}">
+        Envianos un mensaje
+    </a>
+</details>
+<details>
+    <summary>Listas ordenadas desde un punto con la propiedad Start</summary>
+    <ol start="11">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java Script</li>
+        <li>Python</li>
+        <li>Go</li>
+    </ol>
+</details>
+<details>
+    <summary>
+        Elemento meter
+    </summary>
+
+    <label class="meter-label" for="value1">Low</label>
+    <meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+
+    <label class="meter-label" for="value2">Medium</label>
+    <meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+
+    <label class="meter-label" for="value3">High</label>
+    <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+
+</details>
+
+<details>
+    <summary>Busquead Nativa HTML</summary>
+    <h3>
+        Native HTML Search
+    </h3>
+
+    <input class="search-input" list="items">
+
+    <datalist id="items">
+        <option value="Marko Denic">
+        <option value="FreeCodeCamp">
+        <option value="FreeCodeTools">
+        <option value="Web Development">
+        <option value="Web Developer">
+    </datalist>
+</details>
+<details>
+    <summary>Elemento Fildset</summary>
+
+
+    <form>
+        <fieldset>
+            <legend>Choose your favorite language</legend>
+
+            <input type="radio" id="javascript" name="language">
+            <label for="javascript">JavaScript</label><br />
+
+            <input type="radio" id="python" name="language">
+            <label for="python">Python</label><br />
+
+            <input type="radio" id="java" name="language">
+            <label for="java">Java</label>
+        </fieldset>
+    </form>
+
+</details>
+<details>
+    <summary>
+        Window.opener en la etiqueta 'a'
+    </summary>
+
+    <a href="https://markodenic.com/" target="_blank" rel="noopener">
+        Pagina de Miguel
+    </a>
+</details>
+<details>
+    <summary>
+        Elemento base
+    </summary>
+    <base target="_blank">
+    </head>
+    <!-- This link will open in a new tab. -->
+    <div class="wrapper">
+        This link will be opened in a new tab: &nbsp;
+        <a href="https://freecodetools.org/">
+            Free Code Tools
+        </a>
+
+        <p>
+            Read more: <br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">
+                MDN Documentation
+            </a>
+        </p>
+</details>
+<details>
+    <summary>
+        Favicon cache busting
+    </summary>
+
+    <link rel="icon" href="/favicon.ico?v=2" />
+</details>
+
+<details>
+    <summary>
+        El atributo spellcheck
+    </summary>
+
+
+    <label for="input1">spellcheck="true"</label>
+    <input type="text" id="input1" spellcheck="true">
+
+    <label for="input2">spellcheck="false"</label>
+    <input type="text" id="input2" spellcheck="false">
+
+
+</details>
+
+<details>
+    <summary>Slaider nativo de html</summary>
+
+
+    <label for="volume">Volume: </label>
+    <input type="range" id="volume" name="volume" min="0" max="20">
+
+    <label for="result">Your choice: </label>
+    <input type="number" id="result" name="result">
+
+
+
+</details>
+</body>
+<details>
+    <summary>
+        La Etiqueta <mark>"mark"</mark>
+    </summary>
+</details>
+<details>
+<summary>
+    Atributo download
+</summary>
+<a href='path/to/file' download>
+    Download
+</a>
+</details>
+<details>
+    <summary>
+        Consejo de rendimiento con .webp
+    </summary>
+    <picture>
+        <!-- load .webp image if supported -->
+        <source srcset="logo.webp" type="image/webp">
+        
+        <!-- 
+          Fallback if `.webp` images or <picture> tag 
+          not supported by the browser.
+        -->
+        <img src="diw.jpg" alt="logo">
+      </picture>
+</details>
+
+<details>
+    <summary>
+        mini video
+    </summary>
+    <video poster="path/to/image">    
+</details>
+
+<details>
+    <summary>
+        input type search
+    </summary>
+    <form action="">
+        <label for="text">Input type text</label>
+        <input type="text" name="text" id="text">
+        <label for="search">Input type search</label>
+        <input type="search" name="search" id="search">
+    </form>
+</details>
+<details>
+    <summary>pre tag</summary>
+    
+
+<h3>
+    With pre tag
+  </h3>
+  
+  <pre>
+      .center {
+          display: flex;
+          align-items: center;
+          justify-content: center;   
+      }           
+  </pre>
+  
+  <h3>
+    Without pre tag
+  </h3>
+  
+  <p>
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }           
+  </p>
+  
+  
+</details>
+</html>
