@@ -48,6 +48,9 @@ details {
         text-decoration: none;
         color: #202e36;
     }
+      a:hover{
+        color: #6cdfcb;
+    }
 
 }
 
