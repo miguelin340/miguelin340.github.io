@@ -17,11 +17,7 @@ h1 {
     margin: 20px;
 }
 
-li a{
-    font-family: 'Arial', sans-serif;
-    text-decoration: none;
-    list-style: none; 
-}
+
 
 .container {
     display: flex;
@@ -42,6 +38,16 @@ details {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     transition: box-shadow 0.2s; 
+      li{
+        list-style: none;
+        text-decoration: none;
+        padding: 20px;
+    } 
+    a{
+        
+        text-decoration: none;
+        color: #202e36;
+    }
 
 }
 
