@@ -17,8 +17,10 @@ h1 {
     margin: 20px;
 }
 
-li{
-    text-decoration: none; 
+li a{
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    list-style: none; 
 }
 
 .container {
