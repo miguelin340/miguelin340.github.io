@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Texto Alternativo</title>
+    <meta name="description" content="Ejemplo de uso de texto alternativo en imágenes siguiendo las pautas de WebAIM.">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+
+    <header role="banner">
+        <h1>Bienvenido a Nuestra Página Web Accesible</h1>
+        <nav role="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main role="main">
+        <section aria-labelledby="imagenes-heading">
+            <h2 id="imagenes-heading">Imágenes con Texto Alternativo</h2>
+
+
+            <div>
+                <h3>Imagen Decorativa</h3>
+                <p>Esta imagen es puramente decorativa y no aporta información adicional al contenido.</p>
+                <img src="img1.jpg" alt="">
+            </div>
+
+
+            <div>
+                <h3>Imagen Informativa</h3>
+                <p>Esta imagen proporciona información importante sobre el contenido.</p>
+                <img src="img2.jpg"
+                    alt="Gráfico estadístico que muestra el crecimiento de usuarios en los últimos 5 años.">
+            </div>
+
+            <div>
+                <h3>Imagen Funcional</h3>
+                <p>Esta imagen actúa como un botón para enviar un formulario.</p>
+                <button>
+                    <img src="img3.png" id="enviar" alt="Enviar formulario">
+                </button>
+            </div>
+
+
+            <div>
+                <h3>Imagen con Texto</h3>
+                <p>Esta imagen contiene texto que es importante para el contenido.</p>
+                <img src="img4.jpg" alt="Oferta especial: 20% de descuento en todos los productos.">
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2023 Página Web Accesible. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

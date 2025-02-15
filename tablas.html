@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Accesible</title>
+    <meta name="description" content="Ejemplo de una tabla accesible siguiendo las pautas de WebAIM.">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+
+    <header role="banner">
+        <h1>Bienvenido a Nuestra Página Web Accesible</h1>
+        <nav role="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+          
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section aria-labelledby="tabla-heading">
+            <h2 id="tabla-heading">Horario de Clases</h2>
+            <p>Esta tabla muestra el horario de clases para el semestre actual.</p>
+
+            
+            <table aria-describedby="tabla-desc">
+                <caption id="tabla-desc">Horario de Clases - Semestre de Otoño 2023</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miércoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">8:00 - 9:00</th>
+                        <td>DISEÑO DE INTERFACES WEB</td>
+                        <td>DEPLIEGUE DE APLICACIONES WEB</td>
+                        <td>DISEÑO DE INTERFACES WEB</td>
+                        <td>DEPLIEGUE DE APLICACIONES WEB</td>
+                        <td>DISEÑO DE INTERFACES WEB</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9:00 - 10:00</th>
+                        <td>DESARROLLO DE APLICIONES WEB (CLIENTE)</td>
+                        <td>DESARROLLO DE APLICIONES WEB (SERVIDOR)</td>
+                        <td>DESARROLLO DE APLICIONES WEB (CLIENTE)</td>
+                        <td>DESARROLLO DE APLICIONES WEB (SERVIDOR)</td>
+                        <td>DESARROLLO DE APLICIONES WEB (CLIENTE)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00 - 11:00</th>
+                        <td>DISEÑO DE INTERFACES WEB</td>
+                        <td>DESPLIEGUE DE APLICACIONES WEB</td>
+                        <td>DESARROLLO DE APLICIONES WEB (CLIENTE)</td>
+                        <td>DISEÑO DE INTERFACES WEB</td>
+                        <td>DESPLIEGUE DE APLICACIONES WEB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2023 Página Web Accesible. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
